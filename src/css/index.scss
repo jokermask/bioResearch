@@ -1,0 +1,101 @@
+@import "colors";
+
+html{
+  color:$base-font-color ;
+}
+
+//main-body
+#main-body{
+  min-height: 500px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.project-bre{
+  h4{
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+}
+
+pre{
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: none;
+  border: none;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Microsoft YaHei", SimHei;
+  padding: 10px;
+  margin: 0;
+}
+
+.project-task{
+  line-height: 25px;
+  text-indent: 20px;
+  padding: 10px;
+}
+
+.project-task-title{
+  font-weight: bolder;
+  text-indent: 1rem;
+}
+//sidebar
+.news-panel{
+  background: linear-gradient(to bottom,#dff0d8 0,#d0e9c6 100%);
+  color: $news-bar-color ;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inform-panel{
+  background: linear-gradient(to bottom,#f2dede 0,#ebcccc 100%);
+  color: $inform-bar-color ;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.panel-body{
+  background-color: white;
+  font-size: 15px;
+  color: black;
+}
+
+.cooper-header{
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding: 10px 5px;
+}
+
+.coop1 {
+  margin-top: 2px;
+}
+
+.coop2 {
+  margin-top: 10px;
+}
+
+.coop3 {
+  padding-top: 16px;
+}
+
+.coop4 {
+  margin-top: 7px;
+}
+//footer
+footer{
+  text-align: left;
+}
+
+.QRcode{
+  text-align: center;
+}
+
+.address{
+  text-align: center;
+}

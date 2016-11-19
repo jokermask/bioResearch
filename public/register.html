@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>注册</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/css/sweetalert.css' />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="css/register.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1 logo">
+                    <img src="img/logo.jpg" height="130">
+                </div>
+                <div class="col-md-8 title">
+                    <p class="project-title">国家重点研发计划——重要热带病传播相关的入侵媒介及其病原体的生物学特性研究</p>
+                    <p class="project-title-eng">National Research and Development Plan: Research on Biological Characteristics of the Tropical Disease Related Invasion vectors and Pathogens<p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-body">
+        <div class="container register-panel">
+            <form class="register-form">
+                <label class="reg-item">账号<input type="text" name="username" id="username" placeholder="6~16位可由字母数字下划线组成"></label>
+                <label class="reg-item">密码<input type="password" name="password" id="password" placeholder="6~16位"></label>
+                <label class="reg-item">确认密码<input type="password" name="password" id="passwordConfirm" placeholder="请确认您的密码" ></label>
+                <label class="reg-item">姓名<input type="text" name="realname" id="realname" placeholder="请输入您的真实姓名" ></label>
+                <label class="reg-item">邮箱<input type="text" name="email" id="email" placeholder="请输入您的邮箱"></label>
+                <label class="reg-item">身份
+                    <select id="id-select">
+                        <option value="0" selected="selected">游客</option>
+                        <option value="1">学生</option>
+                        <option value="2">教师</option>
+                        <option value="3">管理员</option>
+                        <option value="4">超级管理员</option>
+                    </select>
+                </label>
+                <label class="reg-item id-panel hide">证件号码<input type="text" name="idCode" id="idCode" placeholder="请输入有关证件号码"></label>
+                <p class="inputWarn hide"></p>
+                <p id="register-btn">注册</p>
+            </form>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="/lib/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+<script src="/lib/sweetalert.min.js"></script>
+<script src="js/commons.js" charset="utf-8"></script>
+<script src="js/register.js"></script>
+</html>
