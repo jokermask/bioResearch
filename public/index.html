@@ -8,6 +8,7 @@
     <title>首页</title>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/css/sweetalert.css' />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="css/index.css" />
 </head>
@@ -23,9 +24,10 @@
                     <p class="project-title-eng">National Research and Development Plan: Research on Biological Characteristics of the Tropical Disease Related Invasion vectors and Pathogens<p>
                 </div>
                 <div class="col-md-2">
-                    <p class="login">
-                        <span id="login-btn" class="glyphicon glyphicon-user" aria-hidden="true">登录</span>
-                    </p>
+                    <div class="login">
+                        <p class="login-int"><span id="login-icon" class="glyphicon glyphicon-user" aria-hidden="true"></span>登录</p>
+                        <p class="home-int my-hide"><a href="#"> <span id="home-icon" class="glyphicon glyphicon-home" aria-hidden="true"></span>个人中心</a></p>
+                    </div>
                     <div class="input-group">
                         <input type="text" id="search-content" class="form-control" placeholder="搜索" />
                           <span class="input-group-btn">
@@ -54,6 +56,19 @@
             </div>
         </div>
     </header>
+    <div class="login-panel my-hide">
+        <div class="login-mask"></div>
+        <div class="login-form">
+            <img id="close-btn" src="img/close-btn.png"/>
+            <form>
+                <input id="username" type="text" placeholder="账号">
+                <input id="password" type="password" placeholder="密码">
+                <button type="button" id="login-button">登录</button>
+                <p class="reg-btn"><a href="register.html"/>还没有账号？注册一个</a></p>
+                <p class="login-error"></p>
+            </form>
+        </div>
+    </div>
     <section id="main-body">
         <div class="container">
             <div class="row">
@@ -143,6 +158,7 @@
     </footer>
 <script type="text/javascript" src="/lib/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+    <script src="/lib/sweetalert.min.js"></script>
 <script src="js/commons.js" charset="utf-8"></script>
 <script src="js/index.js"></script>
 </body>

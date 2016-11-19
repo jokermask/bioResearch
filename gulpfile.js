@@ -28,8 +28,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('public/css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
-        .pipe(gulp.dest('public/css'))
-        .pipe(notify({ message: 'Styles task complete' }));
+        .pipe(gulp.dest('public/css'));
 });
 
 // 脚本
@@ -59,20 +58,18 @@ gulp.task('scripts', function(callback) {
 gulp.task('images', function() {
     return gulp.src('src/img/**/*')
         .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-        .pipe(gulp.dest('public/img'))
-        .pipe(notify({ message: 'Images task complete' }));
+        .pipe(gulp.dest('public/img'));
 });
 //html
 //todo 融合ejs
 gulp.task('html', function() {
-    return gulp.src('src/**/*.ejs')
+    return gulp.src('src/**/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }))
         .pipe(ejs({}))
-        .pipe(gulp.dest('public/'))
-        .pipe(notify({ message: 'html task complete' }));
+        .pipe(gulp.dest('public/'));
 });
 // 清理
 gulp.task('clean', function() {
@@ -98,7 +95,7 @@ gulp.task('watch', function() {
     gulp.watch('src/img/**/*', ['images']);
 
     //看守html
-    gulp.watch('src/**/*.ejs', ['html']) ;
+    gulp.watch('src/**/*.html', ['html']) ;
 
     livereload.listen();
     gulp.watch(['public/**']).on('change', livereload.changed);

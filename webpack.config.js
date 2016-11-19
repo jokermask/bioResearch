@@ -1,12 +1,11 @@
-/**
- * Created by 天俊sama on 2016/10/3.
- */
+
 const webpack = require('webpack');
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 module.exports = {
     entry: {
-        index:'./src/js/index.js'
+        index:'./src/js/index.js',
+        register:'./src/js/register.js'
     },
     output: {
         filename: '[name].js'
@@ -41,9 +40,9 @@ module.exports = {
             // (the filename of the commons chunk)
 
             minChunks: 2,
-            // (Modules must be shared between 3 entries)
+            // (Modules must be shared between 2 entries)
 
-            //chunks: ["index", "main"]
+            //chunks: ["index", "register"]
             // (Only use these entries)
         })//定义公共chunk
 
