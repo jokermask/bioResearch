@@ -1,0 +1,42 @@
+.main-body {
+  background-color: #005825;
+  height: 600px; }
+
+.side-bar {
+  margin-top: 30px;
+  min-height: 400px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: #E2E2E2;
+  border-radius: 3px; }
+  .side-bar p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px; }
+
+.personal-bar-list, .paper-bar-list {
+  text-indent: 15px; }
+  .personal-bar-list li, .paper-bar-list li {
+    font-size: 15px;
+    color: #005825;
+    padding: 10px 0;
+    cursor: pointer;
+    list-style: none; }
+    .personal-bar-list li:hover, .paper-bar-list li:hover {
+      background-color: #8AD595;
+      color: white; }
+  .personal-bar-list .active, .paper-bar-list .active {
+    background-color: #8AD595;
+    color: white; }
+
+.info-area {
+  margin-top: 30px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 10px; }
+
+.glyphicon {
+  margin: 0 5px; }
+
+.info-panel {
+  margin-top: 30px; }

@@ -1,0 +1,54 @@
+@import "colors";
+
+.main-body{
+  background-color: $base-green;
+  height: 600px;
+}
+
+.side-bar{
+  margin-top: 30px;
+  min-height: 400px;
+  padding: 10px 0;
+  text-align: left;
+  background-color: $base-bar-color;
+  border-radius: 3px;
+  p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+
+.personal-bar-list,.paper-bar-list{
+  text-indent: 15px;
+  li{
+    font-size: 15px;
+    color: $base-green;
+    padding: 10px 0;
+    cursor: pointer;
+    list-style: none;
+    &:hover{
+      background-color: $bar-list-hover;
+      color: white;
+    }
+  }
+  .active{
+    background-color: $bar-list-hover;
+    color: white;
+  }
+}
+
+.info-area{
+  margin-top: 30px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.glyphicon{
+  margin: 0 5px;
+}
+
+.info-panel{
+  margin-top: 30px;
+}
