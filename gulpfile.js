@@ -96,6 +96,7 @@ gulp.task('watch', function() {
 
     //看守html
     gulp.watch('src/**/*.html', ['html']) ;
+    gulp.watch('src/**/*.inc', ['html']) ;
 
     livereload.listen();
     gulp.watch(['public/**']).on('change', livereload.changed);

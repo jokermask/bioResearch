@@ -86,16 +86,20 @@ header {
   background-color: #005825;
   border-radius: 3px;
   cursor: default; }
+  .nav a {
+    display: inline-block; }
 
 .nav-item {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 30px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 400;
   color: white;
   cursor: pointer;
   transition: all .3s; }
+  .nav-item:hover {
+    background-color: #218868; }
 
 .nav .active {
   background-color: #218868; }

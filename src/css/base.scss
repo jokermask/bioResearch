@@ -127,16 +127,22 @@ header{
   background-color: $base-green;
   border-radius: 3px;
   cursor: default;
+  a{
+    display: inline-block;
+  }
 }
 .nav-item{
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 30px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 400;
   color: white;
   cursor: pointer;
   transition: all .3s;
+  &:hover{
+    background-color: $base-active-green;
+  }
 }
 
 .nav .active{

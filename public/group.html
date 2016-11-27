@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>研究团队</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel='stylesheet' href='css/sweetalert.css' />
+    <link rel="stylesheet" href="css/base.css" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 logo">
+                <img src="img/logo.jpg" height="130">
+            </div>
+            <div class="col-md-8 title">
+                <p class="project-title">国家重点研发计划——重要热带病传播相关的入侵媒介及其病原体的生物学特性研究</p>
+                <p class="project-title-eng">National Research and Development Plan: Research on Biological Characteristics of the Tropical Disease Related Invasion vectors and Pathogens<p>
+            </div>
+            <div class="col-md-2">
+                <div class="login">
+                    <p class="login-int"><span id="login-icon" class="glyphicon glyphicon-user" aria-hidden="true"></span>登录</p>
+                    <p class="home-int my-hide"><a href="#"> <span id="home-icon" class="glyphicon glyphicon-home" aria-hidden="true"></span>个人中心</a></p>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="search-content" class="form-control" placeholder="搜索" />
+                          <span class="input-group-btn">
+                            <button class="btn search-btn" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                          </span>
+                </div>
+            </div>
+        </div>
+        <div class="row nav">
+            <div class="col-md-10 col-md-offset-1">
+                <nav>
+                    <a href="index.html"><li class="nav-item">关于项目</li></a>
+                    <a href="group.html"><li class="nav-item  active">研究团队</li></a>
+                    <a href="groupTask.html"><li class="nav-item">研究方向及任务</li></a>
+                    <a href="news.html"><li class="nav-item">新闻动态</li></a>
+                    <a href="papers.html"><li class="nav-item">最新文章</li></a>
+                    <a href="tools.html"><li class="nav-item">数据/工具</li></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="login-panel my-hide">
+    <div class="login-mask"></div>
+    <div class="login-form">
+        <img id="close-btn" src="img/close-btn.png"/>
+        <form method="post" action="doAction.php?act=login">
+            <input id="username" name="username" type="text" placeholder="账号">
+            <input id="password" name="password" type="password" placeholder="密码">
+            <button id="login-button" type="submit">登录</button>
+            <p class="reg-btn"><a href="register.php"/>还没有账号？注册一个</a></p>
+            <p class="login-error"></p>
+        </form>
+    </div>
+</div>
+<section id="main-body">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</section>
+    <footer class="container">
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <p><b>相关链接</b></p>
+                <p><a href="http://zssom.sysu.edu.cn/">中山大学中山医学院</a></p>
+                <p><a href="http://www.ipd.org.cn/">中国疾病预防控制中心寄生虫病预防控制所</a></p>
+                <p><a href="http://life.fudan.edu.cn/ ">复旦大学生命科学学院</a></p>
+                <p><a href="http://www.ipd.org.cn/">南方医科大学公共卫生与热带医学学院</a></p>
+            </div>
+            <div class="col-sm-4">
+                <p><b>资源共享</b></p>
+                <p><a href="http://www.chinaias.cn/wjPart/index.aspx ">中国外来入侵物种数据库</a></p>
+                <p><a href="http://www.iucngisd.org/gisd/">全球入侵物种数据库GISD</a></p>
+                <p><a href="https://www.vectorbase.org/">人类病原体无脊椎动物媒介生物信息资源数据库（VectorBase）</a></p>
+            </div>
+            <div class="col-sm-4 QRcode">
+                <p>请关注我们的公众号：</p>
+                <!-- <div class="col-sm-4"> -->
+                <img src="img/QRcode.png" height="105">
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="row address">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p>Copyright &copy; 2016 <a href="http://www.sysu.edu.cn/2012/cn/index.htm">中山大学</a> &nbsp&nbsp&nbsp
+                    联系我们：<a href="mailto:wuzhd@mail2.sysu.edu.cn">wuzhd@mail2.sysu.edu.cn</a></p>
+                <p>地址：中国广州市中山二路74号中山大学北校区（邮政编码：510080）</p>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+<script src="../public/lib/base.js"></script>
+</body>
+</html>
