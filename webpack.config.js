@@ -5,7 +5,8 @@ var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 module.exports = {
     entry: {
         index:'./src/js/index.js',
-        register:'./src/js/register.js'
+        register:'./src/js/register.js',
+        group:"./src/js/group.js"
     },
     output: {
         filename: '[name].js'

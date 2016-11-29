@@ -34,6 +34,9 @@ html {
 @media only screen and (min-width: 481px) {
   html {
     font-size: 28px !important; } }
+#main-body {
+  min-height: 500px; }
+
 .my-hide {
   display: none; }
 
